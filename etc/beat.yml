@@ -1,0 +1,7 @@
+################### Wlsbeat Configuration Example #########################
+
+############################# Wlsbeat ######################################
+
+wlsbeat:
+  # Defines how often an event is sent to the output
+  period: 1s
