@@ -3,9 +3,25 @@
 ############################# Wlsbeat ######################################
 
 wlsbeat:
-  # Defines how often an event is sent to the output
-  period: 1s
+################### Jmxproxybeat Configuration Example #########################
 
+############################# Jmxproxybeat ######################################
+
+wlsbeat:
+  # Defines how often an event is sent to the output
+  period: 10s
+
+  instances:
+    - instance:
+      Host: "115.159.193.51"
+      Port: "7001"
+      Username: "weblogic"
+      Password: "123weblogic"
+    - instance:
+      Host: "115.159.193.51"
+      Port: "7001"
+      Username: "weblogic"
+      Password: "123weblogic"
 #================================ General =====================================
 
 # The name of the shipper that publishes the network data. It can be used to group
@@ -29,12 +45,12 @@ wlsbeat:
 #-------------------------- Elasticsearch output ------------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["localhost:9200"]
+  hosts: ["115.159.193.51:9200"]
 
   # Optional protocol and basic auth credentials.
   #protocol: "https"
-  #username: "elastic"
-  #password: "changeme"
+  username: "elastic"
+  password: "elasticpassword"
 
 #----------------------------- Logstash output --------------------------------
 #output.logstash:
