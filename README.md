@@ -2,6 +2,8 @@
 
 Welcome to Wlsbeat.
 
+Wlsbeat is a `beat` wrote by go to collect performance data from WebLogic domain,you can send data to both logstash and elasticsearch directly,you just need to fill some configuration in wlsbeat.yml,such as host(IP),port,username and password.but you need pay attention,a weblogic feature called `RESTful Management Extensions` was used in wlsbeat to collect data,this feature is pretty useful if you want to query AdminServer's Domain for various pieces of information it knows about Servers,Clusters,Applications and Datasources，to enable this feature,you must modify your configuration in your weblogic admin console,detail information please reference weblogic documentation.
+
 Ensure that this folder is at the following location:
 `${GOPATH}/github.com/jalenwang03`
 
