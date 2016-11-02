@@ -16,12 +16,12 @@ wlsbeat:
       Host: "115.159.193.51"
       Port: "7001"
       Username: "weblogic"
-      Password: "123weblogic"
+      Password: ""
     - instance:
       Host: "115.159.193.51"
       Port: "7001"
       Username: "weblogic"
-      Password: "123weblogic"
+      Password: ""
 #================================ General =====================================
 
 # The name of the shipper that publishes the network data. It can be used to group
